@@ -54,6 +54,19 @@
     {
       "_postman_id": "b2f37812-8d29-f90f-3aa7-99eda110be34",
       "name": "http://10.0.80.33:5001/api/v1/match?id1=f52cff5a-46e8-49d6-8530-59c608ad7673&id2=1b7d8df7-56a9-4220-88dc-45d0c10e4b7f&thresh=0.5",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "tests[\"Body matches string\"] = responseBody.has(\"similarity\");",
+              "tests[\"Body matches string\"] = responseBody.has(\"matched\");",
+              ""
+            ]
+          }
+        }
+      ],
       "request": {
         "url": "http://10.0.80.33:5001/api/v1/match?id1=f52cff5a-46e8-49d6-8530-59c608ad7673&id2=1b7d8df7-56a9-4220-88dc-45d0c10e4b7f&thresh=0.5",
         "method": "GET",
