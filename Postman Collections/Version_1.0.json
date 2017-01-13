@@ -40,27 +40,6 @@
       "response": []
     },
     {
-      "_postman_id": "2e1db22b-85d2-a027-b9cd-736ff2d11e97",
-      "name": "http://10.0.80.33:5001/api/v1/identify",
-      "request": {
-        "url": "http://10.0.80.33:5001/api/v1/identify",
-        "method": "POST",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json",
-            "description": ""
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "{\r\n\r\n\"id\": \"b8356900-ad5c-40c0-91eb-f38c03504869\"\r\n\r\n}"
-        },
-        "description": ""
-      },
-      "response": []
-    },
-    {
       "_postman_id": "b2f37812-8d29-f90f-3aa7-99eda110be34",
       "name": "http://10.0.80.33:5001/api/v1/match?id1=f52cff5a-46e8-49d6-8530-59c608ad7673&id2=1b7d8df7-56a9-4220-88dc-45d0c10e4b7f&thresh=0.5",
       "request": {
