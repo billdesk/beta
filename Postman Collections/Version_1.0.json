@@ -100,6 +100,38 @@
         "description": ""
       },
       "response": []
+    },
+    {
+      "_postman_id": "93c26f94-d106-b5ab-1806-be7feef3b532",
+      "name": "http://10.0.80.33:5001/api/v1/identify",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "tests[\"Body matches string\"] = responseBody.has(\"faces\");"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "http://10.0.80.33:5001/api/v1/identify",
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\r\n\"id\": \"b8356900-ad5c-40c0-91eb-f38c03504869\"\r\n\r\n}"
+        },
+        "description": ""
+      },
+      "response": []
     }
   ]
 }
